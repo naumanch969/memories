@@ -1,0 +1,137 @@
+
+
+
+
+
+
+
+Likes.js
+const Likes = () => {
+    if (post.likes.length > 0) {
+      return post.likes.find((like) => like === (user?.result?.googleId || user?.result?._id))
+        ? (
+          <><ThumbUpAltIcon fontSize="small" />&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} like${post.likes.length > 1 ? 's' : ''}` }</>
+        ) : (
+          <><ThumbUpAltOutlined fontSize="small" />&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Like' : 'Likes'}</>
+        );
+    }
+
+    return <><ThumbUpAltOutlined fontSize="small" />&nbsp;Like</>;
+  };
+
+
+
+
+
+
+
+
+
+
+  // first install the package @react-oauth/google
+  // wrap the application in GoogleOAuthProvider in app.js
+  // import GoogleLogin button from package
+  // use google login button
+  // use props onSuccess and onError
+
+    {/* <GoogleLogin
+                    clientId="852629080543-59fla6jkhjahqh6fdn3ijdu925d4li0k.apps.googleusercontent.com"
+                    render={ (renderProps)=>( 
+                      <Button color="primary" fullWidth onClick={ renderProps.onClick } disabled={renderProps.disabled} startIcon={ <Icon/> } variant="contained" >Google Sign In</Button>
+                    ) }
+                    onSuccess={googleSuccess}
+                    onFailure={googleFailure}
+                  /> */}
+
+
+
+
+
+
+//  const handleChange = (e)=>{
+//     setFormData( ...formData, [e.target.name]:e.target.value )
+//   }
+         
+
+
+// like backend logic
+// const index = post.likes.findIndex( (id)=> id === String(req.userId) ) // loop through whole likes array and find the index of user (of id req.userId)
+
+//         if( index === -1 ) {    // if user still have not like the post
+//             post.likes.push(req.userId)
+//         } else {
+//             post.likes = post.likes.filter( (id) => id !== String(req.userId) )
+//         }
+
+
+// form the array of users who likes the post
+//  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Here is a workaround. Delete "proxy": "http://localhost:6000". Install package http-proxy-middleware with command npm install http-proxy-middleware --save. Create a file setupProxy.js inside your src folder or the root of your folder. Add these lines inside:
+
+// const { createProxyMiddleware } = require('http-proxy-middleware');
+
+// module.exports = function(app) {
+//   app.use(
+//     '/api',
+//     createProxyMiddleware({
+//       target: 'http://localhost:6000',
+//       changeOrigin: true,
+//     })
+//   );
+// };
+
+
+
+
+
+
+
+
+
+// react-dom.development.js:86 Warning: validateDOMNesting(...): <h5> cannot appear as a descendant of <p>.
+// document.querySelectorAll(" p *  ")
+
+
+
+
+
+
+
+// function useQuery() {
+//   return new URLSearchParams(useLocation().search)
+// }
+// const query = useQuery()
+// it returns the value of current route
+
+
+
+
+
+
+
+
+// handling adding and deleting an element from an array
+
+// setTags([...tags, tag])
+// setTags(tags.filter((tag) => tag !== tagToDelete))

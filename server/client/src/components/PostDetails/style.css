@@ -1,0 +1,31 @@
+
+
+    .commentsOuterContainer::-webkit-scrollbar{
+        /* right:"0px"; */
+        position:"absolute";
+        background-color:"red";
+    }
+
+ 
+
+        /* Designing for scroll-bar */
+        /* .listOfComments::-webkit-scrollbar {
+            width: 6px;
+        } */
+     
+        /* Track */
+        /* .listOfComments::-webkit-scrollbar-track {
+            background: gainsboro;
+            border-radius: 5px;
+        } */
+     
+        /* Handle */
+        /* .listOfComments::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius: 5px;
+        } */
+     
+        /* Handle on hover */
+        /* .listOfComments::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        } */
